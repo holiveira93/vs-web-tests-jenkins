@@ -53,7 +53,7 @@ public class IteraLoginTest {
                     " tr:nth-child(5) > td > label")).getText();
 
             Assertions.assertEquals("Please enter username", message1);
-            Assertions.assertEquals("Wrong username or passwordd", message2);
+            Assertions.assertEquals("Wrong username or password", message2);
         } finally {
             driver.quit();
         }
