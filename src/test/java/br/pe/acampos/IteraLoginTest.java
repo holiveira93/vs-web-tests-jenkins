@@ -1,6 +1,7 @@
 package br.pe.acampos;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class IteraLoginTest {
     }
 
     @Test
+    @DisplayName("Deve logar com sucesso")
     public void deveLogarComSucesso() {
         WebDriver driver = acessarAplicacao();
 
@@ -36,6 +38,7 @@ public class IteraLoginTest {
     }
 
     @Test
+    @DisplayName("Nao deve logar sem username")
     public void naoDeveLogarSemUsername() {
         WebDriver driver = acessarAplicacao();
 
@@ -57,6 +60,7 @@ public class IteraLoginTest {
     }
 
     @Test
+    @DisplayName("Nao deve logar sem password")
     public void naoDeveLogarSemPassword() {
         WebDriver driver = acessarAplicacao();
 
