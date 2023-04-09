@@ -24,9 +24,12 @@ public class IteraLoginTest {
     public void deveLogarComSucesso() {
         WebDriver driver = acessarAplicacao();
 
+        String username = System.getenv("MEU_USER_ITERA");
+        String password = System.getenv("MINHA_SENHA_ITERA");
+
         try {
-            driver.findElement(By.id("Username")).sendKeys("alycampos");
-            driver.findElement(By.id("Password")).sendKeys("123");
+            driver.findElement(By.id("Username")).sendKeys(username);
+            driver.findElement(By.id("Password")).sendKeys(password);
             driver.findElement(By.cssSelector("body > div > div:nth-child(4) > form > table > tbody > tr:nth-child(7) >" +
                     " td:nth-child(2) > input.btn.btn-primary")).click();
 
