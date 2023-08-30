@@ -55,7 +55,7 @@ public class SauceDemoTest {
     }
 
     @Test
-    @DisplayName("Nao deve logar sem passwordd")
+    @DisplayName("Nao deve logar sem password")
     public void naoDeveLogarSemPassword() {
         WebDriver driver = acessarAplicacao();
 
